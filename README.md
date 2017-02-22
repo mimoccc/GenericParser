@@ -26,8 +26,10 @@ public class SomeRecord implements Comparable<SomeRecord> {
     @GPProperty(index = 8)
     private String label;
     
+    // ...
     // getters & setters
-
+    // ...
+    
     @Override
     public boolean equals(Object o) {
         SomeRecord t = (o instanceof SomeRecord) ? (SomeRecord) o : null;
