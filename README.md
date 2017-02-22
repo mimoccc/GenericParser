@@ -9,7 +9,7 @@ Example of use:
 (data spec:)
 
 
-
+```java
 @GPPostProcess // use postprocess routine for this class
 public class SomeRecord implements Comparable<SomeRecord> {
     @GPFileName // insert filename to property
@@ -44,15 +44,11 @@ public class SomeRecord implements Comparable<SomeRecord> {
         return String.format("%s|%s", parsed_file_filename, page_id);
     }
 }
-
-
-
+```java
 
 (parser usage:)
 
-
-
-
+```java
 public List<SomeRecord> parseFileItems(File file) {
         try {
             GenericParser parser = new GenericParser<SomeRecord>(file, GenericParser.LINE_DELIMITER, DELIMITER) {
@@ -84,4 +80,4 @@ public List<SomeRecord> parseFileItems(File file) {
             e.printStackTrace();
         }
     }
-
+```java
