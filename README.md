@@ -67,7 +67,7 @@ public List<SomeRecord> parseFileItems(File file) {
                 }
 
                 @Override
-                public SheetRecord postProcess(GenericParser icsvRows, SomeRecord data) {
+                public SomeRecord postProcess(GenericParser icsvRows, SomeRecord data) {
                     // post process data
 
                     return data;
