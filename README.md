@@ -4,7 +4,11 @@ Using annotations & java reflection, with cached classes.
 
 Example of use:
 
+
+
 (data spec:)
+
+
 
 @GPPostProcess // use postprocess routine for this class
 public class SomeRecord implements Comparable<SomeRecord> {
@@ -41,7 +45,13 @@ public class SomeRecord implements Comparable<SomeRecord> {
     }
 }
 
+
+
+
 (parser usage:)
+
+
+
 
 public List<SomeRecord> parseFileItems(File file) {
         try {
